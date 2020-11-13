@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB700</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Ritesh Saxena</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="/employees/add">Add Employee</a></li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/employees">Employees</a></li>
+                <li class="nav-item"><a class="nav-link" href="/managers">Managers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/departments">Departments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <header><b>Tables:</b></header>
+                <table>
+                    <caption><b>Order Information</b></caption>
+                
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Colour</th>
+                            <th>Price (CAD)</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Red</td>
+                            <td>$5.60</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Blue</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Blue</td>
+                            <td>$1.50</td>
+                        </tr>
+                    </tbody>
+                
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total</th>
+                            <th>$26.60</th>
+                        </tr>
+                    </tfoot>
+                </table><br><br>
+                
+                <table>
+                    <caption>Purchase Information</caption>
+                
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Colour</th>
+                            <th>Price (CAD)</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Headphones</td>
+                            <td>Red</td>
+                            <td>$5.60</td>
+                        </tr>
+                        <tr>
+                            <td>Blue</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shirt</td>
+                            <td>Blue</td>
+                            <td>$1.50</td>
+                        </tr>
+                    </tbody>
+                
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total</th>
+                            <th>$26.60</th>
+                        </tr>
+                    </tfoot>
+                </table><br>
+                <p>There are two tables. In first table is for order information in which Quantities, Color and Price is mentioned and also wil 
+                    the Total amount. In the Second table is for Item Information, like what is purchased. In this two items are mentioned named 
+                    headphones and Shirt.
+                </p><br>
+
+
+                <header><b>Lists</b></header>
+
+                <ol>
+                    <li>Headphones
+                        <ul>
+                            <li>Blue</li>
+                            <li>Black</li>
+                            <li>Red</li>
+                            <li>Green</li>
+                        </ul>
+                    </li>
+                    <li>Shoes</li>
+                    <li>Shirts</li>
+                    <li>Tshirts</li>
+                    <li>Jackets</li>
+                    <li>Watches</li>
+                    </ol><br>
+
+                <p>In this list I have mentioned the things that I am thinking of purchasing and the color options for headphones
+                    that is available in the market. The list contains Headphones, shoes, jacket, Tshirt, Watches etc.
+                </p><br>
+
+
+                <header><b>Images</b></header>
+                <h6>This is the images section.</h6><br>
+                <img src="https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg?w=590&h=800&62C6A28D-D2CA-4635-AA7017C94E6DDB72" alt="Picture of a cat" width="400"><br><br>
+                <img src="https://i1.wp.com/nypost.com/wp-content/uploads/sites/2/2018/06/180604-baby-talk-to-dogs-feature.jpg?quality=80&strip=all&ssl=1" alt="Picture of a dog" width="400"><br><br>
+                <img src="https://media.buzzle.com/media/images-en/illustrations/mammals/elephants/600-24423107-cute-baby-elephant.jpg" alt="Picture of a elephant" width="400"><br><br>
+                <p>This is an image of cat, dog and elephant. These are the cute pics of cat, dog, elephant. Everyone likes cat, dog and elephants. Do see th epicture of cat, dog and elephant and enjoy it.</p><br>
+
+                <header><b>Audio</b></header>
+                <h6>This is the audio section.</h6><br>
+                <audio controls>
+                    <source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2020/web700/A3/Track03.mp3" type="audio/mp3">
+                    <source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2020/web700/A3/Track03.ogg" type="audio/ogg">
+                    <p>Sorry, your browser doesn't support HTML5 audio. Here is a <a href="song.mp3">link to the audio</a> instead</p>.
+                </audio><br><br>
+                <p>This is a audio which is uploaded in the seneca website by our professor. This is a good audio. Do watch the listen and enjoy it.</p><br>
+
+                <header><b>Video</b></header>
+                <h6>This is the video section.</h6><br>
+                <video width="320" height="240" controls>
+                    <source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2020/web700/A3/movie.mp4" type="video/mp4">
+                    <source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2020/web700/A3/movie.ogg" type="video/ogg">
+                    <source src="https://ict.senecacollege.ca/~patrick.crawford/shared/fall-2020/web700/A3/movie.webm" type="video/webm">
+                    <p>Sorry, your browser doesn't support HTML5 video</p>
+                </video><br><br>
+                <p>This is a movie which is uploaded in the seneca website by our professor. This is a good movie. Do watch the video and enjoy it. </p>
+
+
+                <!-- Start your code here -->
+
+
+
+                <!-- End your code here  -->
+
+
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

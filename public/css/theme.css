@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+.bg-light{
+    background-color: red;
+    box-shadow: -7px 3px 25px 20px rgba(0,0,0,0.75);
+}
+
+
+.navbar-light .navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    color: blue;
+    text-shadow: 2px 1px aqua;
+}
+.navbar-light .navbar-brand:hover{
+    background-color: lightskyblue;
+}
+
+.nav-item .nav-link:link{
+    color: blue;
+    font-family: 'Big Shoulders Stencil Text';
+}
+
+.nav-item .nav-link:hover{
+    background-color: red;
+    font-family: 'Goldman', cursive;
+}
+html{
+    background: rgb(31, 221, 224);
+    background: linear-gradient(41deg, rgb(68, 230, 233) 77%, rgb(68, 230, 233) 77%, rgb(68, 230, 233) 77%);
+}
+body{
+    border: 4px solid black;
+    padding: 30px;
+    background: rgb(31, 221, 224);
+    background: linear-gradient(41deg, rgb(68, 230, 233) 77%, rgb(23, 14, 199) 100%, rgba(0,212,255,1) 100%);
+}
+/* 
+.btn{
+    color: red;
+    background-color: aquamarine;
+} */
+.btn-primary{
+    color: red;
+    background-color: rgb(19, 133, 95);
+    box-shadow: 10px 10px 38px -2px rgba(207,97,207,1);
+}
+
+.btn-primary:hover{
+    background-color: rgb(11, 116, 214);
+    color: blue;
+    font-family: 'Big Shoulders Stencil Text';
+
+}
+td:nth-child(odd) {
+    background-color: rgb(250, 250, 250);
+    color: red;
+  }
+
+  h1, h2,h3,h4,h5,h6{
+    color: blue;
+    font-family: 'Xanh Mono', monospace;
+    text-shadow: 2px 2px #ff0000;
+  }
+
+  a{
+      color: white;
+  }
+  a:hover{
+      color: firebrick;
+  }
+
+  legend{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: 'Heebo', sans-serif;
+      text-shadow: 4px 4px blue;
+      color: red;
+  }
+
+  table{
+      border: 2px solid blue;
+      border-collapse: separate;
+  }

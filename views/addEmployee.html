@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB700</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Ritesh Saxena</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+                <li class="nav-item active"><a class="nav-link" href="/employees/add">Add Employee</a></li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/employees">Employees</a></li>
+                <li class="nav-item"><a class="nav-link" href="/managers">Managers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/departments">Departments</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-12">
+                <form action="/employees/add" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>First Name:</label>
+                                    <input class="form-control" type="text" name="firstName" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Last Name:</label>
+                                    <input class="form-control" type="text" name="lastName" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input class="form-control" type="text" name="email"/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Social Security Num:</label>
+                                    <input class="form-control" type="text" name="SSN"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Address (Street):</label>
+                                    <input class="form-control" type="text" name="addressStreet"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label >Address (City):</label>
+                                <input class="form-control" id="addressCity"  type="text" name="addressCity"/>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Address (State):</label>
+                                    <input class="form-control"  type="text"  name="addressState"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Address (Zip Code):</label>
+                                    <input class="form-control" type="text" name="addressPostal"/>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Company Information</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Manager:</label>
+                                    <input class="form-control" type="checkbox" name="isManager"/>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label >Employee's Manager Number:</label>
+                                    <input class="form-control" type="text" name="employeeManagerNum"/>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Status:</label><br />
+                                    <label class="checkbox-inline">
+                                        <input type="radio" value="Full Time" name="status"/> Full Time
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" value="Part Time" name="status"/> Part Time
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Department</label>
+                                        <select class="form-control">
+                                            <option value="1">Creative Services</option>
+                                            <option value="2">Product Development</option>
+                                            <option value="3">Marketing</option>
+                                            <option value="4">Strategic Planning</option>
+                                            <option value="5">Accounting</option>
+                                            <option value="6">Human Resources</option>
+                                            <option value="7">Quality Analysis</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Hire Date</label>
+                                    <input class="form-control" type="text" name="hireDate"/>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                
+                    <hr />
+                
+                    <input type="submit" class="btn btn-primary float-right" value="Add Employee" /><br /><br /><br />
+                </form>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
